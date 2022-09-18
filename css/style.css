@@ -110,9 +110,9 @@ align-items: center;
 {
     content: "";
     position: absolute;
-    left: -20px;
+    left: -13px;
     width: 5px;
-    height: 40px;
+    height: 30px;
     background-color: var(--main-color);
 }
 .class-ul span{
@@ -182,25 +182,6 @@ button:hover {
 .portfolio{
    padding: 100px 0;
 }
-.portfolio ul {
-  transition: all 1s;
-}
-.portfolio ul .activee
-{
-    color:var(--main-color);
-}
-.portfolio ul li a:hover
-{
-    color:var(--main-color);
-}
-.portfolio ul li{
-    padding: 0 10px;
-}
-.portfolio ul li a{
-    text-decoration: none;
-    color: rgba(7, 1, 1, 0.705);
-    transition: color .5s;
-  }
 .portfolio-img
 {
     margin-top: 20px;
@@ -266,13 +247,16 @@ color: var(--main-color);
     transform-origin: bottom left;
 }
 .feedback-img{
-    width: 20%;
+    width: 15%;
     position: relative;
-  
 }
 .feedback-txt
 {
     width: 80%;
+}
+.feedback p{
+    /* width: 500px; */
+   
 }
 .carousel-indicators [data-bs-target] 
 {
@@ -329,10 +313,35 @@ form input
    color: var(--red-color);
 }
 /* End Footer */
-
+.feedback-txt
+{
+    padding-left: 25px;
+}
+.feedback-cotent
+{
+    padding: 50px;
+}
 /* Media queries */
 @media  screen and (max-width: 991px) {
     nav ul {
     transform: translateX(50%);
     }
     }
+@media screen and (max-width:728px) {
+    .feedback-cotent
+    {
+        flex-direction: column;
+        padding: 0;
+        margin-top: 100px;
+    }
+    .feedback-txt
+    {
+        width: 100%;
+        padding: 0;
+    }
+    .feedback-img  {
+        width: 50%;
+        margin: auto;
+    };
+}
+   
